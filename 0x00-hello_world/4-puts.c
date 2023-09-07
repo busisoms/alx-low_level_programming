@@ -1,13 +1,13 @@
 # include <stdio.h>
 /*
-* main - prints "programing is like building a multilingual puzzle
+* main - prints "programming is like building a multilingual puzzle
 *
 * Return: - (0) success
  */
 
-int /* programing is like building a multilingual puzzle*/main(void)
+int /* programming is like building a multilingual puzzle*/main(void)
 {
-	puts("\"programing is like building a multilingual puzzle");
+	puts("\"programming is like building a multilingual puzzle");
 	return (0);
 
 }
