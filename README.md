@@ -1,3 +1,6 @@
 **alx-low_level_programming**
 
 - C - Hello, World => `0x00-hello_world`
+- C - Variables, if, else, while => `0x01-variables_if_else_while`
+- C - Functions, nested loops => `0x02-functions_nested_loops`
+- C - Debugging => `0x03-debugging`
