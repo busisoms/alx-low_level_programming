@@ -2,14 +2,14 @@
 /**
 * print_number - prints an integer
 * @n: number to be printed
-* 
+*
 */
 
 void print_number(int n)
 {
 	int i, j;
 
-	if ( n < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
