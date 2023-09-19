@@ -2,7 +2,7 @@
 /**
 * _strcpy - copies the string pointed to by scr to dest
 * @dest: pointer to sring destination
-* @scr: pointer to source of string
+* @src: pointer to source of string
 *
 * Return: the pointer to @dest
 */
