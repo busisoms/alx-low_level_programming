@@ -7,9 +7,6 @@
 
 void print_number(int n)
 {
-	char num[20];
-	int i, j;
-
 	if (n == 0)
 	{
 		_putchar('0');
@@ -20,17 +17,11 @@ void print_number(int n)
 		n = -n;
 	}
 
-	i = 0;
-
-	while (n > 0)
+	if (n / 10 != 0)
 	{
-		num[i++] = '0' + (n % 10);
-		n /= 10;
+		print_number(n / 10);
 	}
 
-	for (j = i - 1; j >= 0; j--)
-	{
-		_putchar(num[j]);
-	}
+	_putchar('0' + (n % 10));
 
 }
