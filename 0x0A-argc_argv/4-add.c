@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - adds two positive numbers
  * @argc: number of arguments passed to main
@@ -30,4 +30,5 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 	return (0);
 }
+
 
