@@ -11,4 +11,5 @@
 - C - Recursion => `0x08-recursion`
 - C - Static libraries => `0x09-static_libraries`
 - C - argc, argv => `0x0A-argc_argv`
-
+- C - malloc, free => `0x0B-malloc_free`
+- C - More malloc, free => `0x0C-more_malloc_free`
