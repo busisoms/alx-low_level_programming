@@ -20,10 +20,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-
-	d->name = strdup(name);
-	d->age = age;
-	d->owner = strdup(owner);
-
-	return (d);
+	else
+	{
+		d->name = strdup(name);
+		d->age = age;
+		d->owner = strdup(owner);
+		return (d);
+	}
+	return (NULL);
 }
