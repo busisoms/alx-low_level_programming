@@ -46,6 +46,7 @@ void print_all(const char *const format, ...)
 	int count = 0, i = 0;
 	va_list args;
 	char data;
+	char valid_types[] = {'c', 'i', 'f', 's'};
 
 	while (format[i] != '\0')
 	{
@@ -61,8 +62,7 @@ void print_all(const char *const format, ...)
 		data = format[i];
 		pick_data(data, args);
 		i++;
-		if (i < count && format[i] != '\0' &&
-(format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
+		if (i < count && format[i] != '\0' && strchr(valid_types, format[i]))
 			printf(", ");
 	}
 
