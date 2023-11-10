@@ -26,9 +26,10 @@ void pick_data(char data, va_list args)
 			{
 				str = va_arg(args, char *);
 				if (str == NULL)
+				{
 					printf("(nil)");
-				else
-					printf("%s", str);
+				}
+				printf("%s", str);
 			}
 			break;
 		default:
@@ -63,7 +64,9 @@ void print_all(const char *const format, ...)
 		pick_data(data, args);
 		i++;
 		if (i < count && format[i] != '\0' && strchr(valid_types, format[i]))
+		{
 			printf(", ");
+		}
 	}
 
 	printf("\n");
