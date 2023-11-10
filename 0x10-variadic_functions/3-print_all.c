@@ -10,6 +10,7 @@
 void pick_data(char data, va_list args)
 {
 	char *str;
+	int is_null;
 
 	switch (data)
 	{
@@ -25,11 +26,17 @@ void pick_data(char data, va_list args)
 		case 's':
 			{
 				str = va_arg(args, char *);
-				if (str == NULL)
+				is_null = (str == NULL);
+
+				switch (is_null)
 				{
-					printf("(nil)");
+					case 1:
+						printf("(nil)");
+						break;
+					case 0:
+						printf("%s", str);
+						break;
 				}
-				printf("%s", str);
 			}
 			break;
 		default:
@@ -49,6 +56,11 @@ void print_all(const char *const format, ...)
 	char data;
 	char valid_types[] = {'c', 'i', 'f', 's'};
 
+	if (format == NULL)
+	{
+		return;
+	}
+
 	while (format[i] != '\0')
 	{
 		count++;
@@ -58,7 +70,7 @@ void print_all(const char *const format, ...)
 	va_start(args, format);
 
 	i = 0;
-	while ((i < count) && (format[i] != '\0') && (format != NULL))
+	while (i < count && format[i] != '\0')
 	{
 		data = format[i];
 		pick_data(data, args);
