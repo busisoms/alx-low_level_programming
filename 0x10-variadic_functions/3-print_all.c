@@ -20,7 +20,7 @@ void pick_data(char data, va_list args)
 			printf("%d", va_arg(args, int));
 			break;
 		case 'f':
-			printf("%.2f", va_arg(args, double));
+			printf("%f", va_arg(args, double));
 			break;
 		case 's':
 			{
@@ -58,12 +58,12 @@ void print_all(const char *const format, ...)
 	va_start(args, format);
 
 	i = 0;
-	while (i < count && format[i] != '\0')
+	while ((i < count) && (format[i] != '\0') && (format != NULL))
 	{
 		data = format[i];
 		pick_data(data, args);
 		i++;
-		if (i < count && format[i] != '\0' && strchr(valid_types, format[i]))
+		if (i > 0 && i < count && strchr(valid_types, format[i]))
 		{
 			printf(", ");
 		}
