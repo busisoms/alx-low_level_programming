@@ -13,3 +13,8 @@
 - C - argc, argv => `0x0A-argc_argv`
 - C - malloc, free => `0x0B-malloc_free`
 - C - More malloc, free => `0x0C-more_malloc_free`
+- C - Preprocessor => ``
+- C - Structures, typedef => `0x0E-structures_typedef`
+- C - Function pointers => `0x0F-function_pointers`
+- C - Variadic functions => `0x10-variadic_functions`
+- C - Singly linked lists => `0x12-singly_linked_lists`
