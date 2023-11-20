@@ -18,3 +18,4 @@
 - C - Function pointers => `0x0F-function_pointers`
 - C - Variadic functions => `0x10-variadic_functions`
 - C - Singly linked lists => `0x12-singly_linked_lists`
+- C - More singly linked lists => `0x13-more_singly_linked_lists`
