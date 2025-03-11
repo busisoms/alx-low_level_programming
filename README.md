@@ -8,3 +8,6 @@ Learning low level programming like Shell and C Lang.
 
 ## 0x02-functions_nested_loops
 - Learning functions and more loops
+
+## 0x04-more_functions_nested_loops
+- More on functions and loops
