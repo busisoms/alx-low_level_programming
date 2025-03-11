@@ -31,7 +31,7 @@ int main(void)
 		b_high = next_high;
 		b_low = next_low;
 
-		printf(" ,");
+		printf(", ");
 		if (b_high)
 			printf("%lu%018lu", b_high, b_low);
 		else
