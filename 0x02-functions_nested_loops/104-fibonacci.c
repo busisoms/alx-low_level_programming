@@ -8,27 +8,34 @@
 
 int main(void)
 {
-	unsigned long num_1, num_2, num_3, count;
+	unsigned long a_low = 1, b_low = 2, next_low;
+	unsigned long a_high = 0, b_high = 0, next_high;
+	unsigned long split = 1000000000000000000UL;
+	int count;
 
-	num_1 = 0;
-	num_2 = 1;
-	count = 1;
+	printf("%lu, %lu", a_low, b_low);
 
-	while (count <= 98)
+	for (count = 3; count <= 98; count++)
 	{
-		num_3 = num_1 + num_2;
-		num_1 = num_2;
-		num_2 = num_3;
+		next_high = a_high + b_high;
+		next_low = a_low + b_low;
 
-		if (count != 98)
+		if (next_low >= split)
 		{
-			printf("%lu, ", num_3);
+			next_high += next_low / split;
+			next_low %= split;
 		}
+
+		a_high = b_high;
+		a_low = b_low;
+		b_high = next_high;
+		b_low = next_low;
+
+		printf(" ,");
+		if (b_high)
+			printf("%lu%018lu", b_high, b_low);
 		else
-		{
-			printf("%lu", num_3);
-		}
-		count++;
+			printf("%lu", b_low);
 	}
 	putchar('\n');
 	return (0);
