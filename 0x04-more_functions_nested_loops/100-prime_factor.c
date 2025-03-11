@@ -13,7 +13,7 @@ int main(void)
 	long int max_prime = 1;
 	long int divisor;
 
-	while(number % 2 == 0)
+	while (number % 2 == 0)
 	{
 		max_prime = 2;
 		number /= 2;
@@ -36,4 +36,3 @@ int main(void)
 	printf("%ld\n", max_prime);
 	return (0);
 }
-
