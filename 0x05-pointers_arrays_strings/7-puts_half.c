@@ -16,6 +16,7 @@ void puts_half(char *str)
 		len++;
 		cpy_str++;
 	}
+	printf("%d\n", len);
 
 	if (len % 2 == 0)
 	{
@@ -28,7 +29,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		index = (len - 1) / 2;
+		index = (len / 2)  + 1;
 		while (index < len)
 		{
 			_putchar(str[index]);
