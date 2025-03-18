@@ -16,7 +16,6 @@ void print_rev(char *s)
 		len++;
 		s++;
 	}
-	printf("%d\n", len);
 
 	index = len - 1;
 	while (index >= 0)
