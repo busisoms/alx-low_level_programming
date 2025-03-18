@@ -16,7 +16,6 @@ void puts_half(char *str)
 		len++;
 		cpy_str++;
 	}
-	printf("%d\n", len);
 
 	if (len % 2 == 0)
 	{
