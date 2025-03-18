@@ -20,7 +20,7 @@ void puts_half(char *str)
 	if (len % 2 == 0)
 	{
 		index = len / 2;
-		while (index <= len)
+		while (index < len)
 		{
 			_putchar(str[index]);
 			index++;
@@ -29,7 +29,7 @@ void puts_half(char *str)
 	else
 	{
 		index = (len - 1) / 2;
-		while (index <= len)
+		while (index < len)
 		{
 			_putchar(str[index]);
 			index++;
