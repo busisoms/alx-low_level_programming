@@ -21,3 +21,5 @@ Learning low level programming like Shell and C Lang.
 ## 0x06-pointers_arrays_strings
 - More pointers, strings and loops
 
+## 0x07-pointers_arrays_strings
+- Even more pointers_arrays_strings
