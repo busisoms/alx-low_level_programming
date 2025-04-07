@@ -1,25 +1,25 @@
 # alx-low_level_programming
-Learning low level programming like Shell and C Lang.
-## 0x00-hello_world
-- Introduction to C Lang
 
-## 0x01-variables_if_else_while
-- Learning variables, if-else statements and while loops
+## Project Overview
+This project focuses on mastering pointers, arrays, and strings in C through practical implementations. It includes tasks that simulate real-world low-level programming challenges, such as memory manipulation and string operations.
 
-## 0x02-functions_nested_loops
-- Learning functions and more loops
+## Skills Demonstrated
+- Pointer arithmetic
+- Memory management
+- String manipulation
+- Array traversal
+- Algorithm optimization
 
-## 0x03-debugging
-- Basic debugging techniques
+## Compilation
+All files were compiled with:
+```bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+```
 
-## 0x04-more_functions_nested_loops
-- More on functions and loops
+## Why This Project Matters
+- Demonstrates foundational C programming skills.
+- Shows ability to work with memory addresses directly.
+- Highlights problem-solving in constrained environments.
 
-## 0x05-pointers_arrays_strings
-- Learning pointers, arrays and loops
-
-## 0x06-pointers_arrays_strings
-- More pointers, strings and loops
-
-## 0x07-pointers_arrays_strings
-- Even more pointers_arrays_strings
+![C](https://img.shields.io/badge/C-100%25-blue)
+![ALX](https://img.shields.io/badge/ALX-Africa-00f)
